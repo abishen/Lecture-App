@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+
+<h2>Welcome to Researchers</h2>
+
+@Html.ActionLink("About Us", "About")
+<img src="~/Content/Image/calendar.png" />
+   @Html.ActionLink("Events", "Index", "Event")
+  <img src="~/Content/Image/megaphone.png" width="32" height="32" />
+@Html.ActionLink("Announcement", "Index", "Announcement")
+<img src="~/Content/Image/science-lecture.png" />
+   @Html.ActionLink("Researcher","Index","Research") 
+   @{ if (@ViewBag.Admin == true) { @Html.ActionLink("Site Admin", "Index", "Admin")   } }
+
+<div class="output"></div>
+
+<img src="~/Content/Image/researcher-desktop.jpg" width="1148" height="590" />
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+
+        $.get("/Home/getAccouments", function (data) {
+
+            console.log(data);
+
+
+            //var parsed = JSON.parse(data);
+
+            //console.log();
+
+            var output;
+
+            $.each(data, function (index, element) {
+
+             
+                $('.output').html(element.BodyMessage);
+
+                
+            });
+        });
+    });
+
+</script>

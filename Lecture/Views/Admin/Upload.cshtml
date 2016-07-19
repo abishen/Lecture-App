@@ -1,0 +1,42 @@
+﻿@model Lecture.Models.PublicationModel
+<h2>Upload a publication</h2>
+@using (Html.BeginForm("UploadFile", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    
+    
+    
+    @Html.Hidden("StaffId", @TempData["StaffId"])
+    
+    //@Html.TextBox("StaffId",)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Published_Date, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Published_Date, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Published_Date, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Publication_keyword, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Publication_keyword, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Publication_keyword, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Descriptions, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Descriptions, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Descriptions, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <label>Select a file:</label>
+    <input type="file" name="fileUpload" />
+    <input type="submit" value="Submit" />
+}
+<a href="~/Views/Admin/Upload.cshtml">~/Views/Admin/Upload.cshtml</a>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6a6e8cca-9e17-4e6a-a289-c6e5a18627ec"
+  name="Controllers"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="36052680-8761-4a1e-9f24-e873ec852356"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DLecture.Controllers"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="82e7e59e-d4c8-410a-aedd-80a532453420"
+        name="AdminController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="466625b6-6c07-45d9-8613-e9bfe8b7d429"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fdillon%2Fdocuments%2Fvisual studio 2013%2FProjects%2FLecture%2FLecture%2F&quot; Namespace%3DLecture.Controllers Type%3DAdminController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="fd3fbbb3-a24e-401f-ae7c-7baeee2c7088"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="be1da5a6-fd0f-4b4c-830b-0d87af13576b">
+                <propertyInstance
+                  Id="f27d4a5f-1f7b-4030-a2d4-425a23e90f7d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5402ed5e-7769-4869-8e5b-cffc7ae5e2fa">
+                <propertyInstance
+                  Id="c354fedc-ffc6-4406-bb82-5162bef4ec6b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a74eeb2a-8c25-455e-993e-3b0fe7afa405">
+                <propertyInstance
+                  Id="180e5edc-f7cd-4f37-ad12-7e7b920e3c58"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b51d2529-685c-41d5-951b-4089cda59cae">
+                <propertyInstance
+                  Id="f5b56f51-1f41-40db-aef1-c8bfaac62f67"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1624cd40-d6ff-44a7-98dd-3538dfc5d274">
+                <propertyInstance
+                  Id="9837ac85-3432-4e32-8c32-48cfc8e2f350"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

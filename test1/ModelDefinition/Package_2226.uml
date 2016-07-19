@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="90107788-9dcf-4e47-8f45-2a0e4e2b97fc"
+  name="Lecture"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d45b2f48-da5f-4eaf-b239-71524596d3d5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DLecture"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6373db62-3d2c-4fe6-b77d-c3473f172580"
+        LastKnownName="DbLayer"
+        LastKnownLocation="Package1_2226.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e18e5bce-e7ae-4af0-ad9e-9ba89c47555d"
+        LastKnownName="Models"
+        LastKnownLocation="Package4_2226.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6a6e8cca-9e17-4e6a-a289-c6e5a18627ec"
+        LastKnownName="Controllers"
+        LastKnownLocation="Package2_2227.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
